@@ -1,45 +1,18 @@
-const library = {
- a: ".-",
- b: "-...",
- c: "-.-.",
- d: "-..",
- e: ".",
- f: "..-.",
- g: "--.",
- h: "....",
- i: "..",
- j: ".---",
- k: "-.-",
- l: ".-..",
- m: "--",
- n: "-.",
- o: "---",
- p: ".--.",
- q: "--.-",
- r: ".-.",
- s: "...",
- t: "-",
- u: "..-",
- v: "...-",
- w: ".--",
- x: "-..-",
- y: "-.--",
- z: "--..",
- ' ': "/"
+import {library} from "./data.js"
+
+export const translate = (input) => {
+ if (!input) {
+   return "Please type a sentence"
+ } else {
+   const splitInput = input.toLowerCase().split("");
+   let result = ""
+   splitInput.forEach(letter => {
+     if (!result) {
+      result += `${library[letter]}`;
+     } else {
+     result += ` ${library[letter]}`;
+     }
+   })
+   return result;
+ }
 }
-
-// export const translate = (input) => {
-//  if (!input) {
-//    return "Please type a sentence"
-//  } else {
-
-//  }
-// }
-
-const splitInput = "hello world".split("")
-console.log(splitInput);
-let result = ""
-splitInput.forEach(letter => {
-  result += `${library[letter]} `;
-})
-console.log(result);

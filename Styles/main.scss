@@ -1,0 +1,16 @@
+.translator {
+  text-align: center;
+  &__heading {
+    margin: 50px auto 80px;
+    border: 2px dashed purple;
+    width: 11em;
+  }
+  &__result {
+    width: 20em;
+    margin: auto;
+  }
+}
+
+body {
+  background-color: rgb(206, 237, 248);
+}

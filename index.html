@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/main.css">
   <title>Morse Code translator</title>
 </head>
 <body>
+  
   <form class="translator" action="">
+    <h1 class="translator__heading">Morse Code translator</h1>
     <label class="translator__label "for="sentence">Type a sentence here:</label>
-    <input class="translator__input" type="text" id="sentence" name="sentence">
+    <br><br>
+    <input class="translator__input" type="text" id="sentence" name="sentence" size="40">
     <br><br>
     <button class="translator__button">Translate</button>
-    <br><br><br><br>
+    <button class="translator__clear">Start again</button>
+    <br><br>
     <h3 class="translator__header">Your sentence in morse code looks like this:</h3>
     <p class="translator__result"</p>
+    <br><br>
+    
   </form>
-  <script src="./Scripts/app.js"></script>
+  <script src="./Scripts/translator.js" type="module"></script>
 </body>
 </html>

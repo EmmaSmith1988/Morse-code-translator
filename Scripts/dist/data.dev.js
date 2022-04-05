@@ -1,4 +1,10 @@
-export const library = {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.library = void 0;
+var library = {
   a: ".-",
   b: "-...",
   c: "-.-.",
@@ -54,4 +60,5 @@ export const library = {
   '"': ".-..-.",
   '$': "...-..-",
   '@': ".--.-."
- }
+};
+exports.library = library;
