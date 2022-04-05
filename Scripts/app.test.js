@@ -1,5 +1,5 @@
 import { describe, it, expect } from "@jest/globals";
-import {} from "./app"
+import {translate} from "./app"
 
 describe("Translator function tests", () => {
   it("Translator function alerts an error 'Please type a sentence' if the translate button is pressed whilst the input box is empty", () => {
